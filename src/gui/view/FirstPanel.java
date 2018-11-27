@@ -3,6 +3,8 @@ package gui.view;
 import gui.controller.GUIController;
 import javax.swing.*;
 import java.awt.Color;
+import java.awt.event.*;
+
 
 public class FirstPanel extends JPanel
 {
@@ -38,6 +40,12 @@ public class FirstPanel extends JPanel
 	
 	private void setupListeners()
 	{
-		
+		colorButton.addActionListener(new ActionListener()
+				{
+					public void actionPerformed(ActionEvent mouseClick)
+					{
+						
+					}
+				});
 	}
 }
