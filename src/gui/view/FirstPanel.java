@@ -44,7 +44,7 @@ public class FirstPanel extends JPanel
 				{
 					public void actionPerformed(ActionEvent mouseClick)
 					{
-						System.out.println("I clicked a button!!!!!");
+						changeBackgroundColor();
 					}
 				});
 	}
