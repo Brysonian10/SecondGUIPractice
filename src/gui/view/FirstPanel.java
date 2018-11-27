@@ -30,7 +30,7 @@ public class FirstPanel extends JPanel
 	{
 		this.add(textLabel);
 		this.add(colorButton);
-		this.setBackground(Color.BLUE);
+		this.setBackground(Color.ORANGE);
 	}
 	
 	private void setupLayout()
@@ -44,7 +44,7 @@ public class FirstPanel extends JPanel
 				{
 					public void actionPerformed(ActionEvent mouseClick)
 					{
-						
+						System.out.println("I clicked a button!!!!!");
 					}
 				});
 	}
