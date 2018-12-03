@@ -12,6 +12,7 @@ public class FirstPanel extends JPanel
 	
 	private JButton colorButton;
 	private JLabel textLabel;
+	private SpringLayout appLayout;
 	
 	public FirstPanel(GUIController appController)
 	{
@@ -20,6 +21,11 @@ public class FirstPanel extends JPanel
 		
 		colorButton = new JButton("Click to change the color");
 		textLabel = new JLabel("This is a color app");
+		appLayout = new SpringLayout();
+		appLayout.putConstraint(SpringLayout.NORTH, colorButton, -5, SpringLayout.NORTH, textLabel);
+		appLayout.putConstraint(SpringLayout.EAST, colorButton, -36, SpringLayout.EAST, this);
+		appLayout.putConstraint(SpringLayout.NORTH, textLabel, 125, SpringLayout.NORTH, this);
+		appLayout.putConstraint(SpringLayout.WEST, textLabel, 48, SpringLayout.WEST, this);
 		
 		setupPanel();
 		setupLayout();
@@ -28,6 +34,7 @@ public class FirstPanel extends JPanel
 	
 	private void setupPanel() 
 	{
+		this.setLayout(appLayout);
 		this.add(textLabel);
 		this.add(colorButton);
 		this.setBackground(Color.ORANGE);
@@ -35,6 +42,8 @@ public class FirstPanel extends JPanel
 	
 	private void setupLayout()
 	{
+		
+		
 		
 	}
 	
